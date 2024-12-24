@@ -3,9 +3,26 @@
  * @Autor: WangYuan
  * @Date: 2021-12-20 14:20:57
  * @LastEditors: WangYuan
- * @LastEditTime: 2022-03-14 15:03:01
+ * @LastEditTime: 2024-11-08 17:20:06
 -->
 <!-- [English](./README.md) | 简体中文  -->
+
+## 新低代码开源发布
+
+### 云搭
+
+云搭是一款功能强大、开源、免费的可视化搭建解决方案，它支持零代码搭建小程序、H5、问卷、图文等多种应用，我致力于提供一套简单、便捷、专业、可靠的多场景零代码平台。
+
+<img src="./static/yunda.png" alt style="display: block; margin: 0 auto; max-width: 100%;">
+
+#### 线上平台
+
+<p data-tool="mdnice编辑器" style="font-size: 16px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;">地址：<a href="https://www.sunmao-design.top/sunmao/admin" style="text-decoration: none; color: #1e6bb8; word-wrap: break-word; font-weight: bold; border-bottom: 1px solid #1e6bb8;">传送门</a></p>
+
+### 开源地址
+
+<p data-tool="mdnice编辑器" style="font-size: 16px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;">地址：<a href="https://github.com/wangyuan389/yunda" style="text-decoration: none; color: #1e6bb8; word-wrap: break-word; font-weight: bold; border-bottom: 1px solid #1e6bb8;">传送门</a></p>
+
 
 <p align="center">
   <img src="./static/logo.jpg" />
@@ -18,7 +35,7 @@
 </p>
 
 <p align="center">
-  SASS商城平台，通过可视化搭建商城，支持生成H5、小程序多端商城项目
+  SaaS商城平台，通过可视化搭建商城，支持生成H5、小程序多端商城项目
 </p>
 
 <p align="center">
@@ -29,20 +46,14 @@
 
 Mall-Cook 是一个基于 vue 开发的可视化商城搭建平台，包括多页面可视化构建、Json Schema 生成器（可视化搭建物料控制面板），实现组件流水线式标准接入平台。最新版本使用 uni-app 重构物料、模板项目，支持生成 H5、小程序多端商城。
 
-## 1.1 uni-app 版本上线
-
-- 支持构建 H5、微信小程序多端商城
-- 利用 uni-app 重构物料库与模板项目
-- 修改为 Monorepo 风格项目结构，支持多个子项目独立存在
-
-## 1.1.1 增加 service 子项目
-
-- 后端使用 node 开发，mall-cook-service 项目已公布
-
 ## 体验
 
-<p data-tool="mdnice编辑器" style="font-size: 16px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;">预览地址：<a href="http://110.42.184.128:8000/#/login" style="text-decoration: none; color: #1e6bb8; word-wrap: break-word; font-weight: bold; border-bottom: 1px solid #1e6bb8;">传送门</a></p>
+<p data-tool="mdnice编辑器" style="font-size: 16px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;">平台地址：<a href="http://110.41.150.71:8000/#/login" style="text-decoration: none; color: #1e6bb8; word-wrap: break-word; font-weight: bold; border-bottom: 1px solid #1e6bb8;">传送门</a></p>
 
+## 文档
+<p data-tool="mdnice编辑器" style="font-size: 16px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;">文档地址：<a href="http://110.41.150.71:7000/" style="text-decoration: none; color: #1e6bb8; word-wrap: break-word; font-weight: bold; border-bottom: 1px solid #1e6bb8;">传送门</a></p>
+
+## 平台速览
 <figcaption style="margin-top: 10px;margin-bottom: 10px; text-align: center; color: #888; font-size: 14px;">项目可视化搭建</figcaption>
 <img src="./static/MallCook-Build.gif" alt style="display: block; margin: 0 auto; max-width: 100%;">
 
@@ -64,60 +75,66 @@ Mall-Cook 是一个基于 vue 开发的可视化商城搭建平台，包括多�
 
 本着授人以鱼不如授人以渔思想，我决定在项目新建 shelf 分支，正常迭代 Mall-Cook 情况下，从零重构一套"干净"的可视化架构，同时会在掘金同步出教程文章详细讲述关键功能点，带大家一览此类平台从零到架构搭建的整个过程，谢谢大家的支持
 
-<figcaption style="margin-top: 10px;margin-bottom: 10px; text-align: center; color: #888; font-size: 14px;">Mall-Cook平台架构</figcaption>
+<a href="http://110.41.150.71:8090/img/1667354929405.png" style="text-decoration: none; color: #1e6bb8; word-wrap: break-word; font-weight: bold; border-bottom: 1px solid #1e6bb8;">低代码开发系列教程</a>
+
 <img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7bf42b58cd14458c8f9d2e9dd7e1e7c2~tplv-k3u1fbpfcp-watermark.image" alt style="display: block; margin: 0 auto; max-width: 100%;">
 
-<p data-tool="mdnice编辑器" style="font-size: 16px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;">可视化搭建教程体验项目：<a href="http://110.42.184.128:7000/#/" style="text-decoration: none; color: #1e6bb8; word-wrap: break-word; font-weight: bold; border-bottom: 1px solid #1e6bb8;">传送门</a></p>
+## 开始
 
-<p data-tool="mdnice编辑器" style="font-size: 15px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;"><a href="https://juejin.cn/post/7040993073437868063" style="text-decoration: none; color: #1e6bb8; word-wrap: break-word; font-weight: bold; border-bottom: 1px solid #1e6bb8;">商城可视化搭建平台 Mall-Cook详细介绍</a></p>
-
-<p data-tool="mdnice编辑器" style="font-size: 15px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;"><a href="https://juejin.cn/post/7044432832965378061/" style="text-decoration: none; color: #1e6bb8; word-wrap: break-word; font-weight: bold; border-bottom: 1px solid #1e6bb8;">手把手带你开发一个低代码可视化平台（一） 实现拖拽搭建面板</a></p>
-
-<p data-tool="mdnice编辑器" style="font-size: 15px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;"><a href="https://juejin.cn/post/7046924227340926983" style="text-decoration: none; color: #1e6bb8; word-wrap: break-word; font-weight: bold; border-bottom: 1px solid #1e6bb8;">手把手带你开发一个低代码可视化平台（二） 物料JSON构建属性面板流水线</a></p>
-
-<p data-tool="mdnice编辑器" style="font-size: 15px; padding-top: 8px; padding-bottom: 8px; margin: 0; line-height: 26px; color: black;"><a href="https://juejin.cn/post/7049149768328544270" style="text-decoration: none; color: #1e6bb8; word-wrap: break-word; font-weight: bold; border-bottom: 1px solid #1e6bb8;">手把手带你开发一个低代码可视化平台（三） 组件物料复合类型属性</a></p>
-
-## 特性
-
-- 项目基于 VUE 语言开发
-- 暂支持生成 H5 商城，后续提供生成小程序商城
-- 生成商城支持屏幕适配
-- 提供物料 Json Schema 生成器，根据 Json 自动生成配置栏
-- 提供多页面搭建
-- 提供模板商城，可直接套用模板构建商城
-- 自定义底部 tab 菜单
-- 支持生成 H5、小程序多端商城
-
-## 启动
-
-root 项目选择需运行的子项目 
+### 1、安装依赖
 
 ```bash
-$ npm run dev         # 开发
+yarn bootstrap
+```
+
+如果失败，建议单独进入子目录执行`yarn`安装。
+
+### 2、运行项目
+
+```bash
+yarn dev
 ```
 <img src="./static/MallCook-Start.png" alt style="display: block;">
 
-## 结构
+## 服务端本地启动方案
+ [传送门](./packages/mall-cook-service/README.md)
 
-```javascript
-├─ packages                             // 子项目包
-│  ├─ mall-cook-platform                    // 可视化搭建平台项目
-│  └─ mall-cook-template                    // unn-app模板项目
-├─ scripts                              // root脚本
-└─ package.json
-```
+## 版本更新
+ ### 1.1 uni-app 版本上线
 
-## to do list
+- 支持构建 H5、微信小程序多端商城
+- 利用 uni-app 重构物料库与模板项目
+- 修改为 Monorepo 风格项目结构，支持多个子项目独立存在
 
-- 持续业务组件开发
-- 探索平台接入 NPM 组件
+### 1.2 增加 service 子项目
 
-## Mall-Cook 交流群
+- 后端使用 node 开发，mall-cook-service 项目已公布
 
-大家可以加群交流低代码/零代码可视化搭建(如果交流群过期，可加作者微信邀请加群)
-<div style='display:flex'>
-  <img src="./static/qr.png" alt style="display: block; margin: 30px auto; width: 30%;">
-  <img src="./static/author.png" alt style="display: block; margin: 30px auto; width: 30%;">
-</div>
+### 1.3 支持自定义页面 tab 页面设置与跳转
 
+- 构建自定义页面可在 tabbar 设置为 tab 页
+- 支持物料固定页、自定义页面、tab 自定义页面，全类型页面跳转
 
+### 1.3.1 新增文档
+
+- 新增文档项目
+
+## 捐助
+
+### 友情赞助商
+
+<a href="https://pro.kuaitu.cc" style="text-decoration: none; color: #1e6bb8; word-wrap: break-word; font-weight: bold; border-bottom: 1px solid #1e6bb8;">
+  <img src="./static/kuaitu.png" alt style="width: 20%;">
+</a>
+
+## 开源不易, 有了您的赞助, 我们会做的更好~
+
+  <img src="./static/donate.jpg" alt style="width: 20%;">
+
+## 技术反馈与低代码交流群
+
+- 加入低代码交流群交流
+- 获取低代码开发教程文章
+- 与作者进行相关交流
+
+<img src="./static/official.png" alt style="width: 20%;">

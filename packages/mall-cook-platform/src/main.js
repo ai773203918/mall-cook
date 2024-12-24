@@ -37,12 +37,9 @@ import '@/scss/element-#82AAF1/index.css'
 // vant css
 // import 'vant/lib/index.css'
 
-import Imgpond from 'imgpond'
 import draggable from 'vuedraggable'
-import Minimce from 'minimce'
 import ElementVerify from 'element-verify'
 import _ from 'lodash'
-import global from '@/config/global'
 
 Vue.config.productionTip = false
 
@@ -54,24 +51,44 @@ Vue.component('draggable', draggable)
 Vue.use(globalMethods)
 Vue.use(ElementVerify)
 
-Vue.use(Imgpond, {
-  request,
-  url: global.baseApi + '/upload',
-  param: {
-    domainId: 3,
-    dir: 'img'
-  },
-  sizeExceededWarningHTML:
-    '<a href="https://www.kdocs.cn/l/smLPgaIjt" target="_blank">点击查看压缩指南</a>',
-  poweredBy: 'element'
-})
+/**
+ * Axios 捷径
+ */
+import createAxiosShortcut from 'axios-shortcut'
+const axiosShortcut = createAxiosShortcut(request)
+for (let k in axiosShortcut) {
+  if (!Vue.prototype[`$${k}`]) {
+    Object.defineProperty(Vue.prototype, `$${k}`, {
+      value: axiosShortcut[k]
+    })
+  }
+}
 
-Vue.use(Minimce, {
-  apiKey: process.env.VUE_APP_APIKey,
-  html2text: true,
-  Imgpond
-  // Filepool: Filepool.Filepool,
-})
+/**
+ * String.prototype.replaceAll polyfill
+ */
+import 'core-js/es/string/replace-all'
+
+/**
+ * 表单对话框（目前仅用于富文本的插件）
+ */
+import FaFormDialog from 'faim/dist/components/FormDialog/index.vue'
+import globalConfigForFaFormDialog from '@/faim/FormDialog/globalConfig'
+Vue.use(FaFormDialog, globalConfigForFaFormDialog)
+
+/**
+ * 图片上传
+ */
+import FaImageUpload from 'faim/dist/components/ImageUpload/index.vue'
+import globalConfigForFaImageUpload from '@/faim/ImageUpload/globalConfig'
+Vue.use(FaImageUpload, globalConfigForFaImageUpload)
+
+/**
+ * 富文本
+ */
+import FaRichText from 'faim/dist/components/RichText/index'
+import globalConfigForFaRichText from '@/faim/RichText/globalConfig'
+Vue.use(FaRichText, globalConfigForFaRichText)
 
 Vue.prototype.$jump = jump
 Vue.prototype.$getWrapStyle = getWrapStyle
